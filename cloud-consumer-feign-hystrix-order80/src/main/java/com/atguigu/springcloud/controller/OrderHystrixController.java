@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 @DefaultProperties(defaultFallback = "payment_Global_FallbackMethod")
-public class OrderHystirxController {
+public class OrderHystrixController {
     @Resource
     private PaymentHystrixService paymentHystrixService;
 
