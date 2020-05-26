@@ -15,9 +15,10 @@ import java.util.concurrent.ForkJoinWorkerThread;
  * @auther zzyy
  * @create 2019-12-12 17:31
  */
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+//@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
 @EnableFeignClients
+@SpringBootApplication
 public class SeataStorageServiceApplication2002
 {
     public static void main(String[] args)

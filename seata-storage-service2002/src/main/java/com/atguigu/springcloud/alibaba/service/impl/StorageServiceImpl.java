@@ -24,6 +24,7 @@ public class StorageServiceImpl implements StorageService {
     @Override
     public void decrease(Long productId, Integer count) {
         LOGGER.info("------->storage-service中扣减库存开始");
+        if(count > 10) throw new RuntimeException("库存不足");
         storageDao.decrease(productId,count);
         LOGGER.info("------->storage-service中扣减库存结束");
     }
